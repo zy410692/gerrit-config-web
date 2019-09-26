@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gerrit加库工具</title>
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <form action="/add" method="post">
+        <input name="url"  class="form-control" placeholder="example:git@192.168.3.29:hd/repo.git">
+        <button class="btn btn-default">添加git地址</button>
+    </form>
+    <h4><small>PS:gerrit 于18:00自动重启</small></h4>
+    <h4><small>最近添加5条记录</small></h4>
+    {% for t in replications %}
+        <div class="col-md-12">
+            {{t.url}}
+        </div>
+    {% endfor %}
+</body>
+</html>

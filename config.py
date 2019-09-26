@@ -1,0 +1,1 @@
+gerrit_repliction_config = replication.config的所在路径
