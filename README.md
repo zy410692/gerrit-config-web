@@ -1,4 +1,4 @@
-# gerrit-web-web
+# gerrit-config-web
 gerrit的加库通过replication.conf添加gitlab源对于不懂linux的管理人员实在太容易出错。
 
   1 [remote "..."]
